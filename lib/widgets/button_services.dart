@@ -12,27 +12,25 @@ Widget servicesButton(String icon, String name, double price) {
       ),
       borderRadius: BorderRadius.circular(20),
     ),
-    child: InkWell(
-      child: ListTile(
-        leading: Image.asset(
-          "assets/logo_$icon.png",
-          height: 40,
+    child: ListTile(
+      leading: Image.asset(
+        "assets/logo_$icon.png",
+        height: 40,
+      ),
+      title: Text(
+        name,
+        style: const TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 14,
         ),
-        title: Text(
-          name,
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
-          ),
-        ),
-        trailing: Text(
-          "\$$price",
-          style: const TextStyle(
-            color: Colors.white,
-            fontWeight: FontWeight.bold,
-            fontSize: 14,
-          ),
+      ),
+      trailing: Text(
+        "\$$price",
+        style: const TextStyle(
+          color: Colors.white,
+          fontWeight: FontWeight.bold,
+          fontSize: 14,
         ),
       ),
     ),
